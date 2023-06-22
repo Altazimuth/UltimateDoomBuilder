@@ -259,6 +259,26 @@ namespace CodeImp.DoomBuilder.Windows
 				cbLightAbsoluteBack.Enabled = false;
 				resetbacklight.Enabled = false;
 			}
+
+			// Disable scale controls?
+			if (!General.Map.Config.SidedefScaleSupport)
+			{
+				pfcFrontScaleTop.Enabled = false;
+				pfcFrontScaleMid.Enabled = false;
+				pfcFrontScaleBottom.Enabled = false;
+
+				pfcBackScaleTop.Enabled = false;
+				pfcBackScaleMid.Enabled = false;
+				pfcBackScaleBottom.Enabled = false;
+
+				labelFrontScaleTop.Enabled = false;
+				labelFrontScaleMid.Enabled = false;
+				labelFrontScaleBottom.Enabled = false;
+
+				labelBackScaleTop.Enabled = false;
+				labelBackScaleMid.Enabled = false;
+				labelBackScaleBottom.Enabled = false;
+			}
 		}
 
 		#endregion
